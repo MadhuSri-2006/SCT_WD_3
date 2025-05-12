@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>General Knowledge Quiz</h1><br>
+    
+    <!-- Welcome Message -->
+    <p id="welcomeMsg">Press Start to begin!</p>
+
+    <!-- Quiz Area -->
+    <div id="quiz" class="quiz-box" style="display:none;">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <button id="nextBtn" class="btn" style="display:none;">Next</button>
+    </div>      
+
+    <!-- Score and Review -->
+    <div id="score" class="score"></div>
+    <div id="review" class="review" style="display:none;"></div>
+
+    <!-- Buttons -->
+    <div id="buttons-container">
+      <button id="startBtn" class="btn start">Start Quiz</button>
+      <div id="actionBtns" style="display:none;">
+        <button id="restartBtn" class="btn restart">Restart Quiz</button>
+        <button id="toggleReviewBtn" class="btn">Show Review</button>
+      </div>
+    </div>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>
